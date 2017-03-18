@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA3281951E7DB6C700FF3C6A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3281941E7DB6C700FF3C6A /* main.swift */; };
 		EA32819C1E7DBA4400FF3C6A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32819B1E7DBA4400FF3C6A /* City.swift */; };
+		EA32819E1E7DBE6900FF3C6A /* TourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32819D1E7DBE6900FF3C6A /* TourManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		EA3281911E7DB6C700FF3C6A /* salesManProblemGenatic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = salesManProblemGenatic; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3281941E7DB6C700FF3C6A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EA32819B1E7DBA4400FF3C6A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		EA32819D1E7DBE6900FF3C6A /* TourManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				EA3281941E7DB6C700FF3C6A /* main.swift */,
 				EA32819B1E7DBA4400FF3C6A /* City.swift */,
+				EA32819D1E7DBE6900FF3C6A /* TourManager.swift */,
 			);
 			path = salesManProblemGenatic;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA32819E1E7DBE6900FF3C6A /* TourManager.swift in Sources */,
 				EA32819C1E7DBA4400FF3C6A /* City.swift in Sources */,
 				EA3281951E7DB6C700FF3C6A /* main.swift in Sources */,
 			);
