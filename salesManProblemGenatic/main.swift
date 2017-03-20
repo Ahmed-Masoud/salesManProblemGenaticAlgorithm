@@ -62,15 +62,30 @@ RouteManager.addCity(city: city24)
 
 
 var pop: Population = Population(count: 50,initializ: true)
+print("best route among randomly generated 50 routes :")
+print("-----------------------------------------------------")
+print(pop.getBestRoute().printRoute())
+print("-----------------------------------------------------")
+print("initial (best route among randomly generated 50 routes) distance : ")
+print("-----------------------------------------------------")
 print(pop.getBestRoute().getDistance())
+print("-----------------------------------------------------")
+print("evolving genes ...")
+print("-----------------------------------------------------")
 pop = GenaticAlgo.evolvePopulation(pop: pop)
 var i = 0
 while i < 100{
     pop = GenaticAlgo.evolvePopulation(pop: pop)
     i+=1
 }
+print("best route after 100 generations : ")
+print("-----------------------------------------------------")
 print(pop.getBestRoute().printRoute())
+print("-----------------------------------------------------")
+print("new best distance : ")
+print("-----------------------------------------------------")
 print(pop.getBestRoute().getDistance())
+print("-----------------------------------------------------")
 
 
 
