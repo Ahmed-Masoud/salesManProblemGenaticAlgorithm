@@ -8,7 +8,7 @@
 
 import Foundation
 
-class City {
+public class City {
     private var _x: Int
     private var _y: Int
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Route{
+public class Route{
     private var myRoute = [City]()
     private var weight: Double = 0
     private var distance = 0
