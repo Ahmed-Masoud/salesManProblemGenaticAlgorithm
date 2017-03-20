@@ -10,10 +10,10 @@ import Foundation
 
 public class Population {
     
-    var routes = [Route]()
+    private var routes = [Route]()
     
     init(count: Int, initializ: Bool) {
-        if initializ {
+        
             var i = 0
             while i < count {
                 let newRoute = Route()
@@ -21,7 +21,7 @@ public class Population {
                 routes.append(newRoute)
                 i+=1
             }
-        }
+        
     }
     
     public func getRoute(index: Int)->Route{
@@ -41,6 +41,9 @@ public class Population {
         return fittest
     }
     
+    public func setRoute(route: Route, index: Int){
+        routes[index] = route
+    }
     
     public func populationSize()->Int{
         return routes.count

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RouteManager{
+public class RouteManager{
     private static var destinationCities = [City]()
     
     public static func addCity(city: City){

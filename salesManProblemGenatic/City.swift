@@ -8,9 +8,16 @@
 
 import Foundation
 
-public class City {
+public class City: Equatable {
     private var _x: Int
     private var _y: Int
+    
+    public static func == (lhs: City, rhs: City) -> Bool {
+        if (lhs.x == rhs.x)&&(lhs.y == rhs.y) {
+            return true
+        }
+        return false
+    }
     
     init(x: Int, y: Int) {
         self._x = x

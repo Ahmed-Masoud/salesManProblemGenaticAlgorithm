@@ -18,18 +18,23 @@ public class Route{
     }
     
     init() {
-        let dummyCity = City(x: -1, y: -1)
         var i = 0
         while i < RouteManager.getNumberOfCities() {
-            myRoute.append(dummyCity)
+            //myRoute.append(dummyCity)
             i+=1
         }
     }
     
     public func setCity(city: City, pos: Int){
-        myRoute[pos] = city
-        weight = 0
-        distance = 0
+        if myRoute.count > pos{
+            myRoute[pos] = city
+        }
+        else{
+            myRoute.append(city)
+            weight = 0
+            distance = 0
+        }
+        
     }
     
     public func getCity(pos: Int)->City {
@@ -40,6 +45,7 @@ public class Route{
         var i = 0
         while i < RouteManager.getNumberOfCities() {
             setCity(city: RouteManager.getCity(index: i), pos: i)
+            
             i+=1
         }
         myRoute = myRoute.shuffled()
@@ -74,9 +80,13 @@ public class Route{
         return myRoute.count
     }
     
-    public func containsCity(city: City)->Bool{
-        if myRoute.contains(where: {(city) -> Bool in return true}){
-            return true
+    public func containsCity(city: City,its: Int)->Bool{
+        var i = 0
+        while i < numberOfCitiesInRoute() {
+            if city == myRoute[i] {
+                return true
+            }
+            i+=1
         }
         return false
     }
@@ -85,7 +95,7 @@ public class Route{
         var geneString = "|"
         var i = 0
         while i < myRoute.count {
-            geneString += "\(getCity(pos: i)) | "
+            geneString += "\(getCity(pos: i).printCity()) | "
             i+=1
         }
         return geneString

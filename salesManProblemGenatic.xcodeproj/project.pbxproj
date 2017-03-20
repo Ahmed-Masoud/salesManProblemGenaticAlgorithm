@@ -12,6 +12,7 @@
 		EA32819E1E7DBE6900FF3C6A /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32819D1E7DBE6900FF3C6A /* RouteManager.swift */; };
 		EA3281A01E7DBFD200FF3C6A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32819F1E7DBFD200FF3C6A /* Route.swift */; };
 		EA3281A21E7DCC0A00FF3C6A /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3281A11E7DCC0A00FF3C6A /* Population.swift */; };
+		EAE3001A1E7F8E1F006A7FFD /* GenaticAlgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE300191E7F8E1F006A7FFD /* GenaticAlgo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		EA32819D1E7DBE6900FF3C6A /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		EA32819F1E7DBFD200FF3C6A /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		EA3281A11E7DCC0A00FF3C6A /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		EAE300191E7F8E1F006A7FFD /* GenaticAlgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenaticAlgo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				EA32819D1E7DBE6900FF3C6A /* RouteManager.swift */,
 				EA32819F1E7DBFD200FF3C6A /* Route.swift */,
 				EA3281A11E7DCC0A00FF3C6A /* Population.swift */,
+				EAE300191E7F8E1F006A7FFD /* GenaticAlgo.swift */,
 			);
 			path = salesManProblemGenatic;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE3001A1E7F8E1F006A7FFD /* GenaticAlgo.swift in Sources */,
 				EA32819E1E7DBE6900FF3C6A /* RouteManager.swift in Sources */,
 				EA3281A01E7DBFD200FF3C6A /* Route.swift in Sources */,
 				EA32819C1E7DBA4400FF3C6A /* City.swift in Sources */,
@@ -266,6 +270,7 @@
 				EA32819A1E7DB6C700FF3C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
